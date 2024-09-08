@@ -1,0 +1,12 @@
+{
+  "name": "basic-landing-page",
+  "version": "2.0.0",
+  "license": "MIT",
+  "contributors": [
+    {
+      "name": "LucasCtrl",
+      "email": "lucasalt@protonmail.com",
+      "url": "https://lucasalt.fr/"
+    }
+  ]
+}

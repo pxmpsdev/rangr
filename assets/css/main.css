@@ -1,0 +1,150 @@
+/*!
+* Basic landing page 2.0.0
+* Copyright 2019, LucasAlt
+* By: LucasAlt <lucasalt@protonmail.com>
+* Under MIT License
+* Created: 2019/04/07 by LucasAlt
+********************************************* */
+
+/* 
+*
+* Tree view
+* - Import fonts
+* - Base
+* - Landing area
+*   - Background
+*   - Content
+*   - Footer
+*
+********************************************* */
+
+/* Import fonts
+********************************************* */
+/* Open Sans Regular */
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Regular.ttf");
+}
+
+/* Lato Regular */
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato-Regular.ttf");
+}
+
+/* Lato Bold */
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato-Bold.ttf");
+  font-weight: bold;
+}
+
+/* Base
+********************************************* */
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  font-family: "Lato", sans-serif;
+}
+
+a {
+  color: inherit;
+}
+
+/* Landing area
+********************************************* */
+.landing-area {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+
+  display: flex;
+
+  overflow: hidden;
+}
+
+/* *************** Background *************** */
+.landing-area > .background {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  bottom: -5px;
+  left: -5px;
+
+  background-image: url("https://source.unsplash.com/random/1280x720");
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: blur(3px) brightness(60%);
+}
+
+/* *************** Content *************** */
+.landing-area > .content {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin: auto auto;
+
+  height: auto;
+  width: 90%;
+
+  color: white;
+}
+
+.landing-area .content__image {
+  height: 150px;
+  width: 150px;
+
+  overflow: hidden;
+}
+
+.landing-area .content__image--is-rounded {
+  border-radius: 50%;
+}
+
+.landing-area .content__image > img {
+  height: 150px;
+  width: auto;
+}
+
+.landing-area .content__description {
+  text-align: center;
+}
+
+.landing-area .content__description > a {
+  font-weight: bold;
+}
+
+/* *************** Content *************** */
+.landing-area > .footer {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+
+  color: white;
+}
+
+.landing-area .footer p {
+  margin: 0;
+}
+
+.landing-area .footer a {
+  font-weight: bold;
+}
